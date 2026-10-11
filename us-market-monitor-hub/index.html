@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="每日美股大盤監測報告彙整列表">
+<title>美國大盤監測報告</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="index.html">美國大盤監測報告</a>
+    
+  </div>
+</header>
+<main class="page">
+<section class="hero">
+  <p class="kicker">US MARKET MONITOR</p>
+  <h1>美國大盤監測報告</h1>
+  <p class="lede">每日美股大盤監測彙整：指數、板塊、風險指標與關鍵個股動態。點擊任一報告展開閱讀，手機畫面優先排版。</p>
+</section>
+<section class="date-panel" id="date-panel-section" style="display:none">
+  <h3 class="panel-title">快速選擇日期</h3>
+  <div class="date-scroll" id="date-scroll"></div>
+</section>
+<section class="list">
+  <h2 class="list-title">報告列表</h2>
+  <div id="dynamic-list"></div>
+  <div id="static-fallback" style="display:none">
+<a class="card" href="reports/2026-10-11.html">
+  <div class="card-top">
+    <span class="date">10月11日</span>
+    <span class="data">數據截至 10/9 收盤（週末報告）</span>
+  </div>
+  <h2>2026-10-11 · 美國大盤監測報告</h2>
+  <p class="card-ex">週五三大指數齊漲結束震盪一週，10月6日納指與標普同創歷史收盤新高；虛擬幣板塊反彈領漲，加密概念股 Coinbase 漲超4%。隔夜要聞豐富：特朗普-普京柴油協議、10月消費者信心跌至五個月低點、9月非農僅增2.9萬人。</p>
+  <div class="tags"><span class="tag">週末報告</span><span class="tag">虛擬幣反彈</span><span class="tag">柴油協議</span><span class="tag">歷史新高</span></div>
+  <span class="read">閱讀全文 →</span>
+</a>
+<a class="card" href="reports/2026-10-10.html">
+  <div class="card-top">
+    <span class="date">10月10日</span>
+    <span class="data">數據截至 10/9 收盤</span>
+  </div>
+  <h2>2026-10-10 · 美國大盤監測報告</h2>
+  <p class="card-ex">美股三大指數集體上漲，道指收報51,654.95點（+0.83%）、標普500收報7,811.54點（+0.59%）、納指收報27,366.17點（+0.64%）。房地產與非必需消費品領漲，10/8半導體重挫後科技股企穩反彈。</p>
+  <div class="tags"><span class="tag">三大指數齊漲</span><span class="tag">板塊輪動</span><span class="tag">半導體反彈</span></div>
+  <span class="read">閱讀全文 →</span>
+</a>
+<a class="card" href="reports/2026-10-09.html">
+  <div class="card-top">
+    <span class="date">10月9日</span>
+    <span class="data">數據截至 10/8 收盤</span>
+  </div>
+  <h2>2026-10-09 · 美國大盤監測報告</h2>
+  <p class="card-ex">三大指數震盪回落，納指單日下跌1.25%創七週最大跌幅。AI泡沫擔憂＋油價大漲逾4%＋美債收益率2002年新高三重壓力疊加；能源板塊因油價領漲全場，資金明顯轉向防禦。</p>
+  <div class="tags"><span class="tag">納指 -1.25%</span><span class="tag">AI泡沫擔憂</span><span class="tag">油價+4%</span></div>
+  <span class="read">閱讀全文 →</span>
+</a>
+<a class="card" href="reports/2026-10-08.html">
+  <div class="card-top">
+    <span class="date">10月8日</span>
+    <span class="data">數據截至 10/7 收盤</span>
+  </div>
+  <h2>2026-10-08 · 美國大盤監測報告</h2>
+  <p class="card-ex">美股創歷史收盤新高後回落：國債收益率衝高至5.365%（2002年以來新高）、聯準會會議紀要釋放鷹派信號、通脹仍高於目標構成三重壓力；醫療保健板塊逆勢領漲。</p>
+  <div class="tags"><span class="tag">歷史新高回落</span><span class="tag">10Y 5.365%</span><span class="tag">鷹派紀要</span></div>
+  <span class="read">閱讀全文 →</span>
+</a>
+  </div>
+  <script>
+  (function(){
+    function esc(t){ var d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
+    fetch('/api/reports')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var container = document.getElementById('dynamic-list');
+        if (!data || !data.length) {
+          document.getElementById('static-fallback').style.display = '';
+          return;
+        }
+        // 渲染日期快捷面板（最近十個交易日）
+        var panel = document.getElementById('date-panel-section');
+        var scroll = document.getElementById('date-scroll');
+        var dates = data.slice(0, 10);
+        scroll.innerHTML = dates.map(function(report, idx){
+          var parts = report.slug.split('-');
+          var label = (parts[1] || '') + '/' + (parts[2] || '');
+          var cls = 'date-chip' + (idx === 0 ? ' latest' : '');
+          return '<a class="' + cls + '" href="report.html?date=' + encodeURIComponent(report.slug) + '">' + esc(label) + '</a>';
+        }).join('');
+        panel.style.display = '';
+        container.innerHTML = data.map(function(report){
+          var tags = (report.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
+          var excerpt = report.excerpt || '';
+          // 优先使用静态报告的详细摘要（如果有的话）
+          var staticCard = document.querySelector('#static-fallback a[href="reports/' + report.slug + '.html"]');
+          if (staticCard) {
+            var staticEx = staticCard.querySelector('.card-ex');
+            if (staticEx && staticEx.textContent.trim()) excerpt = staticEx.textContent.trim();
+            var staticTags = staticCard.querySelectorAll('.tags .tag');
+            if (staticTags.length) {
+              tags = Array.from(staticTags).map(function(t){ return '<span class="tag">' + esc(t.textContent) + '</span>'; }).join('');
+            }
+          }
+          return '<a class="card" href="report.html?date=' + encodeURIComponent(report.slug) + '">\n' +
+            '  <div class="card-top"><span class="date">' + esc(report.date_label || report.slug) + '</span><span class="data">數據截至 ' + esc(report.data_date || '') + ' 收盤</span></div>\n' +
+            '  <h2>' + esc(report.slug) + ' · 美國大盤監測報告</h2>\n' +
+            '  <p class="card-ex">' + esc(excerpt) + '</p>\n' +
+            '  <div class="tags">' + tags + '</div>\n' +
+            '  <span class="read">閱讀全文 →</span>\n' +
+            '</a>';
+        }).join('');
+      })
+      .catch(function(){
+        document.getElementById('static-fallback').style.display = '';
+      });
+  })();
+  </script>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="foot-inner">
+    <p>本內容由人工智能基於公開信息及相關數據生成，僅供研究與交流，不構成任何投資建議、收益承諾或交易依據。市場有風險，投資需謹慎。</p>
+    <p class="meta">資料來源：新華社、東方財富、iFind、中國證券報等公開來源 · 每日自動生成</p>
+  </div>
+</footer>
+</body>
+</html>

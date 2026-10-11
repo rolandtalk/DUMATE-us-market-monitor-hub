@@ -1,0 +1,40 @@
+# System & IDE
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Temporary / cache / internal
+.dumate/
+.tmp/
+.opencode-router/
+.*/
+*.ocr-cache/
+logs/
+
+# Data & artifacts (large files)
+*.pdf
+*.zip
+nasdaq_*.json
+us_indices_*.json
+vix_test.json
+
+# Old / backup projects
+berlin-clock/
+us-market-monitor-site/
+
+# Temporary deployment scripts
+add_meta_and_upload.js
+convert_and_upload.js
+fix_excerpt.js
+fix_excerpt2.js
+fix_meta.js
+
+# Scheduler execution records
+scheduler/
+
+# Internal config
+opencode.json
+
+# Markdown report drafts
+美國大盤監測報告_*.md

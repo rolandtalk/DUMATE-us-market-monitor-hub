@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="美國大盤監測報告詳情">
+<title>美國大盤監測報告</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.report-meta { text-align:center; margin:1.5rem 0; }
+.report-meta .data-date { color:#6b7280; font-size:.875rem; }
+.report-meta .tags { margin-top:.5rem; }
+.report-meta .tag { display:inline-block; background:#eef2ff; color:#4338ca; font-size:.75rem; padding:.2rem .5rem; border-radius:6px; margin:.15rem; }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="index.html">美國大盤監測報告</a>
+    <a class="back" href="index.html">← 所有報告</a>
+  </div>
+</header>
+<main class="page">
+  <div id="loading" style="text-align:center;padding:3rem 1rem;color:#6b7280;">載入中…</div>
+  <article id="report-content" style="display:none;">
+    <div class="report-meta">
+      <p class="data-date" id="data-date"></p>
+      <div class="tags" id="meta-tags"></div>
+    </div>
+    <div id="blocks"></div>
+  </article>
+  <div id="error" style="display:none;text-align:center;padding:3rem 1rem;">
+    <p>無法載入報告，請稍後重試。</p>
+    <a href="index.html">← 返回列表</a>
+  </div>
+</main>
+<footer class="site-foot">
+  <div class="foot-inner">
+    <p>本內容由人工智能基於公開信息及相關數據生成，僅供研究與交流，不構成任何投資建議、收益承諾或交易依據。市場有風險，投資需謹慎。</p>
+    <p class="meta">資料來源：新華社、東方財富、iFind、中國證券報等公開來源 · 每日自動生成</p>
+  </div>
+</footer>
+<script>
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function formatCell(cell) {
+  if (typeof cell !== 'string') return escapeHtml(String(cell));
+  if (/^[\+\-][\d,.]+%$/.test(cell.trim())) {
+    const cls = cell.trim().startsWith('+') ? 'up' : 'down';
+    return '<span class="' + cls + '">' + escapeHtml(cell) + '</span>';
+  }
+  return escapeHtml(cell);
+}
+
+function renderTable(block) {
+  const caption = block.caption ? '<caption>' + escapeHtml(block.caption) + '</caption>' : '';
+  let html = '<div class="table-wrap"><table>' + caption + '<thead><tr>';
+  for (const h of block.headers || []) {
+    html += '<th>' + escapeHtml(h) + '</th>';
+  }
+  html += '</tr></thead><tbody>';
+  for (const row of block.rows || []) {
+    html += '<tr>';
+    for (const cell of row) {
+      html += '<td>' + formatCell(cell) + '</td>';
+    }
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function renderBlocks(blocks) {
+  let html = '';
+  for (const b of blocks) {
+    switch (b.type) {
+      case 'meta':
+        break;
+      case 'h1':
+        html += '<h1>' + escapeHtml(b.text) + '</h1>';
+        break;
+      case 'h2':
+        html += '<h2>' + escapeHtml(b.text) + '</h2>';
+        break;
+      case 'h3':
+        html += '<h3>' + escapeHtml(b.text) + '</h3>';
+        break;
+      case 'body':
+        html += '<p>' + escapeHtml(b.text).replace(/\n/g, '<br>\n') + '</p>';
+        break;
+      case 'table':
+        html += renderTable(b);
+        break;
+      case 'bullet':
+        html += '<ul>' + (b.items || []).map(item => '<li>' + escapeHtml(item) + '</li>').join('') + '</ul>';
+        break;
+      case 'callout':
+        html += '<div class="callout ' + (b.kind || 'note') + '">' + escapeHtml(b.text).replace(/\n/g, '<br>\n') + '</div>';
+        break;
+      case 'chart':
+        html += b.svg || '';
+        break;
+      default:
+        break;
+    }
+  }
+  return html;
+}
+
+const params = new URLSearchParams(window.location.search);
+const date = params.get('date');
+const slug = date ? date.replace(/[^\d-]/g, '') : '';
+
+if (!slug) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('error').style.display = 'block';
+} else {
+  fetch('/api/reports/' + slug)
+    .then(r => {
+      if (!r.ok) throw new Error('Report not found');
+      return r.json();
+    })
+    .then(data => {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('report-content').style.display = '';
+
+      let meta = {};
+      if (Array.isArray(data)) {
+        meta = data.find(b => b.type === 'meta') || {};
+      } else {
+        meta = data.meta || data;
+      }
+      document.title = (meta.date_label || meta.date || slug) + ' 美國大盤監測報告';
+      document.getElementById('data-date').textContent = meta.data_date ? '數據截至 ' + meta.data_date + ' 收盤' : '';
+      const tagContainer = document.getElementById('meta-tags');
+      if (meta.tags && meta.tags.length) {
+        tagContainer.innerHTML = meta.tags.map(t => '<span class="tag">' + escapeHtml(t) + '</span>').join('');
+      } else {
+        tagContainer.style.display = 'none';
+      }
+
+      let blocks = data;
+      if (!Array.isArray(data) && data.blocks) blocks = data.blocks;
+      document.getElementById('blocks').innerHTML = renderBlocks(blocks);
+    })
+    .catch(() => {
+      // Fallback to static report page if it exists
+      window.location.href = 'reports/' + slug + '.html';
+    });
+}
+</script>
+</body>
+</html>
