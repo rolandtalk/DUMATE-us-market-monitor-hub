@@ -1,0 +1,4440 @@
+{
+  "source_status": "ok",
+  "meta": {
+    "tool": "get_price_history",
+    "source": "ifind_http",
+    "query_count": 1,
+    "successful_queries": 1,
+    "partial": false,
+    "units": {
+      "close": "price",
+      "change_ratio": "percent",
+      "open": "price",
+      "high": "price",
+      "low": "price",
+      "volume": "shares"
+    },
+    "query_plan": [
+      {
+        "label": "history:OTHER",
+        "operation": "history"
+      }
+    ],
+    "provenance": [
+      {
+        "label": "history:OTHER",
+        "operation": "history",
+        "raw_fields": [
+          "close",
+          "changeRatio",
+          "open",
+          "high",
+          "low",
+          "volume"
+        ],
+        "period": "2026-09-15..2026-10-13",
+        "units": {
+          "close": "price",
+          "change_ratio": "percent",
+          "open": "price",
+          "high": "price",
+          "low": "price",
+          "volume": "shares"
+        },
+        "definitions": {
+          "close": {
+            "raw_field": "close",
+            "unit": "price",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          },
+          "change_ratio": {
+            "raw_field": "changeRatio",
+            "unit": "percent",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          },
+          "open": {
+            "raw_field": "open",
+            "unit": "price",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          },
+          "high": {
+            "raw_field": "high",
+            "unit": "price",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          },
+          "low": {
+            "raw_field": "low",
+            "unit": "price",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          },
+          "volume": {
+            "raw_field": "volume",
+            "unit": "shares",
+            "scope": "",
+            "period_type": "",
+            "indicator_note": ""
+          }
+        }
+      }
+    ],
+    "symbols": [
+      "IXIC.GI",
+      "DINI.FX"
+    ],
+    "fields": [
+      "close",
+      "change_ratio",
+      "open",
+      "high",
+      "low",
+      "volume"
+    ],
+    "requested_range": [
+      "2026-09-15",
+      "2026-10-13"
+    ],
+    "adjustment": "none",
+    "currency": "original",
+    "fill": "blank",
+    "field_definitions": {
+      "close": {
+        "raw_field": "close",
+        "unit": "price",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      },
+      "change_ratio": {
+        "raw_field": "changeRatio",
+        "unit": "percent",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      },
+      "open": {
+        "raw_field": "open",
+        "unit": "price",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      },
+      "high": {
+        "raw_field": "high",
+        "unit": "price",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      },
+      "low": {
+        "raw_field": "low",
+        "unit": "price",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      },
+      "volume": {
+        "raw_field": "volume",
+        "unit": "shares",
+        "scope": "",
+        "period_type": "",
+        "indicator_note": ""
+      }
+    }
+  },
+  "warnings": [],
+  "instruments": [
+    {
+      "code": "IXIC.GI",
+      "rows": [
+        {
+          "close": 25981.57,
+          "change_ratio": -0.78223780961193,
+          "open": 26140.23,
+          "high": 26172.12,
+          "low": 25943.31,
+          "volume": 70151737,
+          "time": "2026-09-15",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 25981.57,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.78223780961193,
+              "source_period": "2026-09-15",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26140.23,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26172.12,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 25943.31,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 70151737,
+              "source_period": "2026-09-15",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 25978.42,
+          "change_ratio": -0.012123978651026,
+          "open": 26108.46,
+          "high": 26225.09,
+          "low": 25802.96,
+          "volume": 91255338,
+          "time": "2026-09-16",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 25978.42,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.012123978651026,
+              "source_period": "2026-09-16",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26108.46,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26225.09,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 25802.96,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 91255338,
+              "source_period": "2026-09-16",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26418.3,
+          "change_ratio": 1.6932515526348,
+          "open": 26377.86,
+          "high": 26460.64,
+          "low": 26289.94,
+          "volume": 90819803,
+          "time": "2026-09-17",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26418.3,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 1.6932515526348,
+              "source_period": "2026-09-17",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26377.86,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26460.64,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26289.94,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 90819803,
+              "source_period": "2026-09-17",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26522.55,
+          "change_ratio": 0.39461282520071,
+          "open": 26522.09,
+          "high": 26544.93,
+          "low": 26333.98,
+          "volume": 127351273,
+          "time": "2026-09-18",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26522.55,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.39461282520071,
+              "source_period": "2026-09-18",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26522.09,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26544.93,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26333.98,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 127351273,
+              "source_period": "2026-09-18",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27122.09,
+          "change_ratio": 2.260491543988,
+          "open": 26723.19,
+          "high": 27183.93,
+          "low": 26707.42,
+          "volume": 78327478,
+          "time": "2026-09-21",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27122.09,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 2.260491543988,
+              "source_period": "2026-09-21",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26723.19,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27183.93,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26707.42,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 78327478,
+              "source_period": "2026-09-21",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27244.28,
+          "change_ratio": 0.45051837819283,
+          "open": 27161.2,
+          "high": 27288.79,
+          "low": 27161.2,
+          "volume": 79932937,
+          "time": "2026-09-22",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27244.28,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.45051837819283,
+              "source_period": "2026-09-22",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27161.2,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27288.79,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27161.2,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 79932937,
+              "source_period": "2026-09-22",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26936.04,
+          "change_ratio": -1.1313934521301,
+          "open": 27213.52,
+          "high": 27217.33,
+          "low": 26873.54,
+          "volume": 75173759,
+          "time": "2026-09-23",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26936.04,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -1.1313934521301,
+              "source_period": "2026-09-23",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27213.52,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27217.33,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26873.54,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 75173759,
+              "source_period": "2026-09-23",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26939.37,
+          "change_ratio": 0.012362619004123,
+          "open": 26734.51,
+          "high": 26971.04,
+          "low": 26706.14,
+          "volume": 70973342,
+          "time": "2026-09-24",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26939.37,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.012362619004123,
+              "source_period": "2026-09-24",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26734.51,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26971.04,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26706.14,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 70973342,
+              "source_period": "2026-09-24",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27068.72,
+          "change_ratio": 0.48015228270001,
+          "open": 26970.95,
+          "high": 27122.76,
+          "low": 26876.27,
+          "volume": 62681622,
+          "time": "2026-09-25",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27068.72,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.48015228270001,
+              "source_period": "2026-09-25",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26970.95,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27122.76,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26876.27,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 62681622,
+              "source_period": "2026-09-25",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26820.38,
+          "change_ratio": -0.91744271616833,
+          "open": 26935.76,
+          "high": 26990.02,
+          "low": 26709.69,
+          "volume": 61308731,
+          "time": "2026-09-28",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26820.38,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.91744271616833,
+              "source_period": "2026-09-28",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26935.76,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26990.02,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26709.69,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 61308731,
+              "source_period": "2026-09-28",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26797.54,
+          "change_ratio": -0.0851591215337,
+          "open": 26908.76,
+          "high": 26919.72,
+          "low": 26717.95,
+          "volume": 62151495,
+          "time": "2026-09-29",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26797.54,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.0851591215337,
+              "source_period": "2026-09-29",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26908.76,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 26919.72,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26717.95,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 62151495,
+              "source_period": "2026-09-29",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26861.06,
+          "change_ratio": 0.23703668321794,
+          "open": 26892.8,
+          "high": 27108.2,
+          "low": 26861.06,
+          "volume": 78008607,
+          "time": "2026-09-30",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26861.06,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.23703668321794,
+              "source_period": "2026-09-30",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26892.8,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27108.2,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26861.06,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 78008607,
+              "source_period": "2026-09-30",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 26871.6,
+          "change_ratio": 0.039238957807314,
+          "open": 26992.31,
+          "high": 27014.47,
+          "low": 26733.89,
+          "volume": 62166270,
+          "time": "2026-10-01",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 26871.6,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.039238957807314,
+              "source_period": "2026-10-01",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 26992.31,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27014.47,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 26733.89,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 62166270,
+              "source_period": "2026-10-01",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27190.86,
+          "change_ratio": 1.188094493815,
+          "open": 27216.91,
+          "high": 27353.68,
+          "low": 27112.24,
+          "volume": 68401736,
+          "time": "2026-10-02",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27190.86,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 1.188094493815,
+              "source_period": "2026-10-02",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27216.91,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27353.68,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27112.24,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 68401736,
+              "source_period": "2026-10-02",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27477.31,
+          "change_ratio": 1.0534789999287,
+          "open": 27225.93,
+          "high": 27544.07,
+          "low": 27223.49,
+          "volume": 70321128,
+          "time": "2026-10-05",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27477.31,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 1.0534789999287,
+              "source_period": "2026-10-05",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27225.93,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27544.07,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27223.49,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 70321128,
+              "source_period": "2026-10-05",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27599.89,
+          "change_ratio": 0.44611353877071,
+          "open": 27641.17,
+          "high": 27722.75,
+          "low": 27592.56,
+          "volume": 76587367,
+          "time": "2026-10-06",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27599.89,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.44611353877071,
+              "source_period": "2026-10-06",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27641.17,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27722.75,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27592.56,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 76587367,
+              "source_period": "2026-10-06",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27538.69,
+          "change_ratio": -0.22174001418122,
+          "open": 27430.54,
+          "high": 27547.2,
+          "low": 27341.31,
+          "volume": 64427445,
+          "time": "2026-10-07",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27538.69,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.22174001418122,
+              "source_period": "2026-10-07",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27430.54,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27547.2,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27341.31,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 64427445,
+              "source_period": "2026-10-07",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27193.34,
+          "change_ratio": -1.2540538420673,
+          "open": 27416.03,
+          "high": 27491.89,
+          "low": 27066.76,
+          "volume": 78157826,
+          "time": "2026-10-08",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27193.34,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -1.2540538420673,
+              "source_period": "2026-10-08",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27416.03,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27491.89,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27066.76,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 78157826,
+              "source_period": "2026-10-08",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27366.17,
+          "change_ratio": 0.63556003050746,
+          "open": 27342.27,
+          "high": 27395.41,
+          "low": 27254.03,
+          "volume": 60831982,
+          "time": "2026-10-09",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27366.17,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.63556003050746,
+              "source_period": "2026-10-09",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27342.27,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27395.41,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27254.03,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 60831982,
+              "source_period": "2026-10-09",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 27245.9,
+          "change_ratio": -0.43948422450053,
+          "open": 27352.51,
+          "high": 27376.66,
+          "low": 27219.42,
+          "volume": 57586867,
+          "time": "2026-10-12",
+          "thscode": "IXIC.GI",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 27245.9,
+              "source_period": "2026-10-12",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.43948422450053,
+              "source_period": "2026-10-12",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 27352.51,
+              "source_period": "2026-10-12",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 27376.66,
+              "source_period": "2026-10-12",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 27219.42,
+              "source_period": "2026-10-12",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": 57586867,
+              "source_period": "2026-10-12",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "supported"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        }
+      ],
+      "issues": [],
+      "categories": [
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05",
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-08",
+        "2026-10-09",
+        "2026-10-12"
+      ],
+      "series": {
+        "open": [
+          26140.23,
+          26108.46,
+          26377.86,
+          26522.09,
+          26723.19,
+          27161.2,
+          27213.52,
+          26734.51,
+          26970.95,
+          26935.76,
+          26908.76,
+          26892.8,
+          26992.31,
+          27216.91,
+          27225.93,
+          27641.17,
+          27430.54,
+          27416.03,
+          27342.27,
+          27352.51
+        ],
+        "high": [
+          26172.12,
+          26225.09,
+          26460.64,
+          26544.93,
+          27183.93,
+          27288.79,
+          27217.33,
+          26971.04,
+          27122.76,
+          26990.02,
+          26919.72,
+          27108.2,
+          27014.47,
+          27353.68,
+          27544.07,
+          27722.75,
+          27547.2,
+          27491.89,
+          27395.41,
+          27376.66
+        ],
+        "low": [
+          25943.31,
+          25802.96,
+          26289.94,
+          26333.98,
+          26707.42,
+          27161.2,
+          26873.54,
+          26706.14,
+          26876.27,
+          26709.69,
+          26717.95,
+          26861.06,
+          26733.89,
+          27112.24,
+          27223.49,
+          27592.56,
+          27341.31,
+          27066.76,
+          27254.03,
+          27219.42
+        ],
+        "close": [
+          25981.57,
+          25978.42,
+          26418.3,
+          26522.55,
+          27122.09,
+          27244.28,
+          26936.04,
+          26939.37,
+          27068.72,
+          26820.38,
+          26797.54,
+          26861.06,
+          26871.6,
+          27190.86,
+          27477.31,
+          27599.89,
+          27538.69,
+          27193.34,
+          27366.17,
+          27245.9
+        ],
+        "change_ratio": [
+          -0.78223780961193,
+          -0.012123978651026,
+          1.6932515526348,
+          0.39461282520071,
+          2.260491543988,
+          0.45051837819283,
+          -1.1313934521301,
+          0.012362619004123,
+          0.48015228270001,
+          -0.91744271616833,
+          -0.0851591215337,
+          0.23703668321794,
+          0.039238957807314,
+          1.188094493815,
+          1.0534789999287,
+          0.44611353877071,
+          -0.22174001418122,
+          -1.2540538420673,
+          0.63556003050746,
+          -0.43948422450053
+        ],
+        "amount": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "volume": [
+          70151737,
+          91255338,
+          90819803,
+          127351273,
+          78327478,
+          79932937,
+          75173759,
+          70973342,
+          62681622,
+          61308731,
+          62151495,
+          78008607,
+          62166270,
+          68401736,
+          70321128,
+          76587367,
+          64427445,
+          78157826,
+          60831982,
+          57586867
+        ],
+        "turnover_ratio": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pe": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pe_ttm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pb": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "ps": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "statistics": {
+        "count": 20,
+        "start": "2026-09-15",
+        "end": "2026-10-12",
+        "fields": {
+          "open": {
+            "min": {
+              "value": 26108.46,
+              "date": "2026-09-16"
+            },
+            "max": {
+              "value": 27641.17,
+              "date": "2026-10-06"
+            }
+          },
+          "high": {
+            "min": {
+              "value": 26172.12,
+              "date": "2026-09-15"
+            },
+            "max": {
+              "value": 27722.75,
+              "date": "2026-10-06"
+            }
+          },
+          "low": {
+            "min": {
+              "value": 25802.96,
+              "date": "2026-09-16"
+            },
+            "max": {
+              "value": 27592.56,
+              "date": "2026-10-06"
+            }
+          },
+          "close": {
+            "min": {
+              "value": 25978.42,
+              "date": "2026-09-16"
+            },
+            "max": {
+              "value": 27599.89,
+              "date": "2026-10-06"
+            }
+          },
+          "amount": {
+            "min": {
+              "value": null,
+              "date": null
+            },
+            "max": {
+              "value": null,
+              "date": null
+            }
+          },
+          "volume": {
+            "min": {
+              "value": 57586867,
+              "date": "2026-10-12"
+            },
+            "max": {
+              "value": 127351273,
+              "date": "2026-09-18"
+            }
+          }
+        }
+      },
+      "unit_contract": {
+        "volume": {
+          "raw_unit": "shares",
+          "display_units": {
+            "股": 1,
+            "手": 100,
+            "万股": 10000,
+            "万手": 1000000
+          }
+        },
+        "amount": {
+          "raw_unit": "currency",
+          "display_units": {
+            "元": 1,
+            "万元": 10000,
+            "亿元": 100000000
+          }
+        }
+      },
+      "coverage": {
+        "open": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": 27352.51,
+          "observed_min": 26108.46,
+          "observed_max": 27641.17
+        },
+        "high": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": 27376.66,
+          "observed_min": 26172.12,
+          "observed_max": 27722.75
+        },
+        "low": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": 27219.42,
+          "observed_min": 25802.96,
+          "observed_max": 27592.56
+        },
+        "close": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": 27245.9,
+          "observed_min": 25978.42,
+          "observed_max": 27599.89
+        },
+        "change_ratio": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": -0.43948422450053,
+          "observed_min": -1.2540538420673,
+          "observed_max": 2.260491543988
+        },
+        "amount": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "volume": {
+          "valid_count": 20,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-12",
+          "latest_value": 57586867,
+          "observed_min": 57586867,
+          "observed_max": 127351273
+        },
+        "turnover_ratio": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pe": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pe_ttm": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pb": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "ps": {
+          "valid_count": 0,
+          "missing_count": 20,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        }
+      }
+    },
+    {
+      "code": "DINI.FX",
+      "rows": [
+        {
+          "close": 99.615,
+          "change_ratio": 0.2253725186385,
+          "open": 99.48,
+          "high": 99.687,
+          "low": 99.478,
+          "volume": null,
+          "time": "2026-09-15",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 99.615,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.2253725186385,
+              "source_period": "2026-09-15",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 99.48,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 99.687,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 99.478,
+              "source_period": "2026-09-15",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-15",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.252,
+          "change_ratio": 0.63946192842443,
+          "open": 99.696,
+          "high": 100.354,
+          "low": 99.537,
+          "volume": null,
+          "time": "2026-09-16",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.252,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.63946192842443,
+              "source_period": "2026-09-16",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 99.696,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 100.354,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 99.537,
+              "source_period": "2026-09-16",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-16",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.248,
+          "change_ratio": -0.0039899453377396,
+          "open": 100.272,
+          "high": 100.367,
+          "low": 100.022,
+          "volume": null,
+          "time": "2026-09-17",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.248,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.0039899453377396,
+              "source_period": "2026-09-17",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 100.272,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 100.367,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.022,
+              "source_period": "2026-09-17",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-17",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.222,
+          "change_ratio": -0.025935679514814,
+          "open": 100.238,
+          "high": 100.564,
+          "low": 100.165,
+          "volume": null,
+          "time": "2026-09-18",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.222,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.025935679514814,
+              "source_period": "2026-09-18",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 100.238,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 100.564,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.165,
+              "source_period": "2026-09-18",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-18",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.429,
+          "change_ratio": 0.20654147791903,
+          "open": 100.252,
+          "high": 100.451,
+          "low": 100.179,
+          "volume": null,
+          "time": "2026-09-21",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.429,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.20654147791903,
+              "source_period": "2026-09-21",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 100.252,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 100.451,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.179,
+              "source_period": "2026-09-21",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-21",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.601,
+          "change_ratio": 0.17126527198319,
+          "open": 100.417,
+          "high": 100.703,
+          "low": 100.307,
+          "volume": null,
+          "time": "2026-09-22",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.601,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.17126527198319,
+              "source_period": "2026-09-22",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 100.417,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 100.703,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.307,
+              "source_period": "2026-09-22",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-22",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.096,
+          "change_ratio": 0.49204282263596,
+          "open": 100.56,
+          "high": 101.231,
+          "low": 100.544,
+          "volume": null,
+          "time": "2026-09-23",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.096,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.49204282263596,
+              "source_period": "2026-09-23",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 100.56,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.231,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.544,
+              "source_period": "2026-09-23",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-23",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.285,
+          "change_ratio": 0.18695101685526,
+          "open": 101.114,
+          "high": 101.398,
+          "low": 101.001,
+          "volume": null,
+          "time": "2026-09-24",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.285,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.18695101685526,
+              "source_period": "2026-09-24",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.114,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.398,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.001,
+              "source_period": "2026-09-24",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-24",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 100.971,
+          "change_ratio": -0.31001629066495,
+          "open": 101.269,
+          "high": 101.305,
+          "low": 100.872,
+          "volume": null,
+          "time": "2026-09-25",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 100.971,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.31001629066495,
+              "source_period": "2026-09-25",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.269,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.305,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.872,
+              "source_period": "2026-09-25",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-25",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.197,
+          "change_ratio": 0.22382664329362,
+          "open": 101.102,
+          "high": 101.308,
+          "low": 100.98,
+          "volume": null,
+          "time": "2026-09-28",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.197,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.22382664329362,
+              "source_period": "2026-09-28",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.102,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.308,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 100.98,
+              "source_period": "2026-09-28",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-28",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.372,
+          "change_ratio": 0.17293002756998,
+          "open": 101.194,
+          "high": 101.612,
+          "low": 101.177,
+          "volume": null,
+          "time": "2026-09-29",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.372,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.17293002756998,
+              "source_period": "2026-09-29",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.194,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.612,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.177,
+              "source_period": "2026-09-29",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-29",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.451,
+          "change_ratio": 0.077930789567132,
+          "open": 101.408,
+          "high": 101.527,
+          "low": 101.026,
+          "volume": null,
+          "time": "2026-09-30",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.451,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.077930789567132,
+              "source_period": "2026-09-30",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.408,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 101.527,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.026,
+              "source_period": "2026-09-30",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-09-30",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 102.099,
+          "change_ratio": 0.63873199869889,
+          "open": 101.465,
+          "high": 102.207,
+          "low": 101.459,
+          "volume": null,
+          "time": "2026-10-01",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 102.099,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.63873199869889,
+              "source_period": "2026-10-01",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.465,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.207,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.459,
+              "source_period": "2026-10-01",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-01",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.932,
+          "change_ratio": -0.16356673424813,
+          "open": 102.016,
+          "high": 102.132,
+          "low": 101.668,
+          "volume": null,
+          "time": "2026-10-02",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.932,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.16356673424813,
+              "source_period": "2026-10-02",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 102.016,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.132,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.668,
+              "source_period": "2026-10-02",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-02",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 102.167,
+          "change_ratio": 0.23054585409881,
+          "open": 101.917,
+          "high": 102.535,
+          "low": 101.855,
+          "volume": null,
+          "time": "2026-10-05",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 102.167,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.23054585409881,
+              "source_period": "2026-10-05",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.917,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.535,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.855,
+              "source_period": "2026-10-05",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-05",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 101.833,
+          "change_ratio": -0.32691573600086,
+          "open": 102.142,
+          "high": 102.285,
+          "low": 101.754,
+          "volume": null,
+          "time": "2026-10-06",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 101.833,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.32691573600086,
+              "source_period": "2026-10-06",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 102.142,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.285,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.754,
+              "source_period": "2026-10-06",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-06",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 102.242,
+          "change_ratio": 0.40163797590173,
+          "open": 101.885,
+          "high": 102.499,
+          "low": 101.903,
+          "volume": null,
+          "time": "2026-10-07",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 102.242,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.40163797590173,
+              "source_period": "2026-10-07",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 101.885,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.499,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.903,
+              "source_period": "2026-10-07",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-07",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 102.138,
+          "change_ratio": -0.10171944993251,
+          "open": 102.232,
+          "high": 102.467,
+          "low": 102.033,
+          "volume": null,
+          "time": "2026-10-08",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 102.138,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": -0.10171944993251,
+              "source_period": "2026-10-08",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 102.232,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.467,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 102.033,
+              "source_period": "2026-10-08",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-08",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        },
+        {
+          "close": 102.213,
+          "change_ratio": 0.073430065205887,
+          "open": 102.128,
+          "high": 102.335,
+          "low": 101.92,
+          "volume": null,
+          "time": "2026-10-09",
+          "thscode": "DINI.FX",
+          "interval": "1d",
+          "_provenance": {
+            "close": {
+              "raw_field": "close",
+              "raw_value": 102.213,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/close",
+              "evidence_status": "supported"
+            },
+            "change_ratio": {
+              "raw_field": "changeRatio",
+              "raw_value": 0.073430065205887,
+              "source_period": "2026-10-09",
+              "source_unit": "percent",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/changeRatio",
+              "evidence_status": "supported"
+            },
+            "open": {
+              "raw_field": "open",
+              "raw_value": 102.128,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/open",
+              "evidence_status": "supported"
+            },
+            "high": {
+              "raw_field": "high",
+              "raw_value": 102.335,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/high",
+              "evidence_status": "supported"
+            },
+            "low": {
+              "raw_field": "low",
+              "raw_value": 101.92,
+              "source_period": "2026-10-09",
+              "source_unit": "price",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/low",
+              "evidence_status": "supported"
+            },
+            "volume": {
+              "raw_field": "volume",
+              "raw_value": null,
+              "source_period": "2026-10-09",
+              "source_unit": "shares",
+              "scope": "",
+              "period_type": "",
+              "indicator_note": "",
+              "source_locator": "ifind://history/history:OTHER/volume",
+              "evidence_status": "empty"
+            }
+          },
+          "amount": null,
+          "turnover_ratio": null,
+          "pe": null,
+          "pe_ttm": null,
+          "pb": null,
+          "ps": null
+        }
+      ],
+      "issues": [],
+      "categories": [
+        "2026-09-15",
+        "2026-09-16",
+        "2026-09-17",
+        "2026-09-18",
+        "2026-09-21",
+        "2026-09-22",
+        "2026-09-23",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-05",
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "series": {
+        "open": [
+          99.48,
+          99.696,
+          100.272,
+          100.238,
+          100.252,
+          100.417,
+          100.56,
+          101.114,
+          101.269,
+          101.102,
+          101.194,
+          101.408,
+          101.465,
+          102.016,
+          101.917,
+          102.142,
+          101.885,
+          102.232,
+          102.128
+        ],
+        "high": [
+          99.687,
+          100.354,
+          100.367,
+          100.564,
+          100.451,
+          100.703,
+          101.231,
+          101.398,
+          101.305,
+          101.308,
+          101.612,
+          101.527,
+          102.207,
+          102.132,
+          102.535,
+          102.285,
+          102.499,
+          102.467,
+          102.335
+        ],
+        "low": [
+          99.478,
+          99.537,
+          100.022,
+          100.165,
+          100.179,
+          100.307,
+          100.544,
+          101.001,
+          100.872,
+          100.98,
+          101.177,
+          101.026,
+          101.459,
+          101.668,
+          101.855,
+          101.754,
+          101.903,
+          102.033,
+          101.92
+        ],
+        "close": [
+          99.615,
+          100.252,
+          100.248,
+          100.222,
+          100.429,
+          100.601,
+          101.096,
+          101.285,
+          100.971,
+          101.197,
+          101.372,
+          101.451,
+          102.099,
+          101.932,
+          102.167,
+          101.833,
+          102.242,
+          102.138,
+          102.213
+        ],
+        "change_ratio": [
+          0.2253725186385,
+          0.63946192842443,
+          -0.0039899453377396,
+          -0.025935679514814,
+          0.20654147791903,
+          0.17126527198319,
+          0.49204282263596,
+          0.18695101685526,
+          -0.31001629066495,
+          0.22382664329362,
+          0.17293002756998,
+          0.077930789567132,
+          0.63873199869889,
+          -0.16356673424813,
+          0.23054585409881,
+          -0.32691573600086,
+          0.40163797590173,
+          -0.10171944993251,
+          0.073430065205887
+        ],
+        "amount": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "volume": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "turnover_ratio": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pe": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pe_ttm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "pb": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "ps": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "statistics": {
+        "count": 19,
+        "start": "2026-09-15",
+        "end": "2026-10-09",
+        "fields": {
+          "open": {
+            "min": {
+              "value": 99.48,
+              "date": "2026-09-15"
+            },
+            "max": {
+              "value": 102.232,
+              "date": "2026-10-08"
+            }
+          },
+          "high": {
+            "min": {
+              "value": 99.687,
+              "date": "2026-09-15"
+            },
+            "max": {
+              "value": 102.535,
+              "date": "2026-10-05"
+            }
+          },
+          "low": {
+            "min": {
+              "value": 99.478,
+              "date": "2026-09-15"
+            },
+            "max": {
+              "value": 102.033,
+              "date": "2026-10-08"
+            }
+          },
+          "close": {
+            "min": {
+              "value": 99.615,
+              "date": "2026-09-15"
+            },
+            "max": {
+              "value": 102.242,
+              "date": "2026-10-07"
+            }
+          },
+          "amount": {
+            "min": {
+              "value": null,
+              "date": null
+            },
+            "max": {
+              "value": null,
+              "date": null
+            }
+          },
+          "volume": {
+            "min": {
+              "value": null,
+              "date": null
+            },
+            "max": {
+              "value": null,
+              "date": null
+            }
+          }
+        }
+      },
+      "unit_contract": {
+        "volume": {
+          "raw_unit": "shares",
+          "display_units": {
+            "股": 1,
+            "手": 100,
+            "万股": 10000,
+            "万手": 1000000
+          }
+        },
+        "amount": {
+          "raw_unit": "currency",
+          "display_units": {
+            "元": 1,
+            "万元": 10000,
+            "亿元": 100000000
+          }
+        }
+      },
+      "coverage": {
+        "open": {
+          "valid_count": 19,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-09",
+          "latest_value": 102.128,
+          "observed_min": 99.48,
+          "observed_max": 102.232
+        },
+        "high": {
+          "valid_count": 19,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-09",
+          "latest_value": 102.335,
+          "observed_min": 99.687,
+          "observed_max": 102.535
+        },
+        "low": {
+          "valid_count": 19,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-09",
+          "latest_value": 101.92,
+          "observed_min": 99.478,
+          "observed_max": 102.033
+        },
+        "close": {
+          "valid_count": 19,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-09",
+          "latest_value": 102.213,
+          "observed_min": 99.615,
+          "observed_max": 102.242
+        },
+        "change_ratio": {
+          "valid_count": 19,
+          "missing_count": 0,
+          "first_valid_date": "2026-09-15",
+          "last_valid_date": "2026-10-09",
+          "latest_value": 0.073430065205887,
+          "observed_min": -0.32691573600086,
+          "observed_max": 0.63946192842443
+        },
+        "amount": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "volume": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "turnover_ratio": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pe": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pe_ttm": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "pb": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        },
+        "ps": {
+          "valid_count": 0,
+          "missing_count": 19,
+          "first_valid_date": null,
+          "last_valid_date": null,
+          "latest_value": null,
+          "observed_min": null,
+          "observed_max": null
+        }
+      }
+    }
+  ],
+  "rejected_rows": []
+}
